@@ -4,8 +4,12 @@
 trigger:
 - master
 
-pool:
-  vmImage: ubuntu-latest
+jobs:
+- job: Windows
+  pool:
+    name: Home Pool
+    demands:
+    - cmake
 
   steps:
   - task: CMake@1
