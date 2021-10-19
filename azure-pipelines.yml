@@ -8,8 +8,6 @@ jobs:
 - job: Windows
   pool:
     name: Home Pool
-    demands:
-    - cmake
 
   steps:
   - task: CMake@1
